@@ -1,0 +1,23 @@
+
+.bg-body-tertiary {
+    background-color: red;
+  }
+  
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-text a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .navbar-text{
+    color: red;
+  }
+  .navbar-text a:hover {
+    text-decoration: underline;
+    color: red;
+  }
+  
