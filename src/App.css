@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  width: 1000px;
 }
 
 .App-logo {
@@ -12,10 +11,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.allCards{
-  display: flex;
 }
 
 .App-header {
