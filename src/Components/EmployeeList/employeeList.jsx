@@ -26,7 +26,10 @@ const EmployeeList = () => {
 
     // Check if the employee matches the search query in any of the fields
     const matchesSearch = Object.values(employee).some((value) =>
-      value.toString().toLowerCase().includes(searchQuery.toLowerCase())
+    
+      value != null && value.toString().toLowerCase().includes(searchQuery.toLowerCase())
+
+      
     );
 
     return matchesDepartment && matchesSearch;

@@ -10,7 +10,7 @@ const Dashboard = () => {
 
   const handleLogout = () => {
     // Clear authentication state (e.g., tokens, user data)
-    // localStorage.removeItem("userToken"); // Example for token removal
+    localStorage.removeItem("jwt"); // Example for token removal
 
     // Redirect to the login page after logout
     navigate("/");

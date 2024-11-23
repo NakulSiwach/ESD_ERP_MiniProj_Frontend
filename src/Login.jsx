@@ -25,8 +25,9 @@ const Login = () => {
   const handleLogin = async (event) => {
     event.preventDefault();
     setError('');
-
+    console.log("reached here 1");
     const response  = await loginUser(email,password);
+    console.log(response);
     navigate("/dashboard");
   };
 

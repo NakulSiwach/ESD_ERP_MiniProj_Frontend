@@ -12,11 +12,13 @@ const axiosInstance = axios.create({
 
 
 axiosInstance.interceptors.request.use((config) => {
-  const token = localStorage.getItem("jwt");
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
-  }
-  return config;
+
+    const token = localStorage.getItem("jwt");
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+  
 });
 
 export const fetchEmployeesAPI = async () => {
@@ -32,6 +34,7 @@ export const updateEmployee = async (employee) => {
 export const loginUser = async (email, password) => {
   const response = await axiosInstance.post("/employees", { email, password });
   localStorage.setItem("jwt",response.data.token)
+  console.log("reacherd only here");
   return response.data;
 };
 
